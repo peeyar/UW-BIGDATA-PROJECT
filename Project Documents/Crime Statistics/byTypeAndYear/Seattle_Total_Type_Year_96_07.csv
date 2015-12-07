@@ -1,0 +1,117 @@
+report_year,crime_type,total_number
+1996,Aggravated Assault,2247
+1997,Aggravated Assault,2628
+1998,Aggravated Assault,2431
+1999,Aggravated Assault,2266
+2000,Aggravated Assault,2446
+2001,Aggravated Assault,2332
+2002,Aggravated Assault,2304
+2003,Aggravated Assault,2208
+2004,Aggravated Assault,2022
+2005,Aggravated Assault,2323
+2006,Aggravated Assault,2299
+2007,Aggravated Assault,2017
+1996,Homicide,35
+1997,Homicide,49
+1998,Homicide,47
+1999,Homicide,44
+2000,Homicide,36
+2001,Homicide,25
+2002,Homicide,27
+2003,Homicide,34
+2004,Homicide,24
+2005,Homicide,25
+2006,Homicide,29
+2007,Homicide,24
+1996,NonResidential Burglary,2865
+1997,NonResidential Burglary,2841
+1998,NonResidential Burglary,2311
+1999,NonResidential Burglary,2266
+2000,NonResidential Burglary,2413
+2001,NonResidential Burglary,2306
+2002,NonResidential Burglary,2266
+2003,NonResidential Burglary,2358
+2004,NonResidential Burglary,2301
+2005,NonResidential Burglary,2012
+2006,NonResidential Burglary,2072
+2007,NonResidential Burglary,1636
+1996,Property Crimes Total,51040
+1997,Property Crimes Total,51547
+1998,Property Crimes Total,48293
+1999,Property Crimes Total,45516
+2000,Property Crimes Total,40890
+2001,Property Crimes Total,41953
+2002,Property Crimes Total,42391
+2003,Property Crimes Total,46363
+2004,Property Crimes Total,42923
+2005,Property Crimes Total,43589
+1996,Rape,238
+1997,Rape,203
+1998,Rape,220
+1999,Rape,170
+2000,Rape,161
+2001,Rape,145
+2002,Rape,135
+2003,Rape,152
+2004,Rape,139
+2005,Rape,133
+2006,Rape,121
+2007,Rape,81
+1996,Residential Burglary,4977
+1997,Residential Burglary,5283
+1998,Residential Burglary,4629
+1999,Residential Burglary,4180
+2000,Residential Burglary,3721
+2001,Residential Burglary,4356
+2002,Residential Burglary,5011
+2003,Residential Burglary,6169
+2004,Residential Burglary,5426
+2005,Residential Burglary,4734
+2006,Residential Burglary,5402
+2007,Residential Burglary,4350
+1996,Robbery,1952
+1997,Robbery,2062
+1998,Robbery,1719
+1999,Robbery,1635
+2000,Robbery,1638
+2001,Robbery,1577
+2002,Robbery,1564
+2003,Robbery,1497
+2004,Robbery,1578
+2005,Robbery,1592
+2006,Robbery,1654
+2007,Robbery,1513
+1996,Theft,36600
+1997,Theft,36168
+1998,Theft,33098
+1999,Theft,30300
+2000,Theft,26238
+2001,Theft,26337
+2002,Theft,26606
+2003,Theft,28595
+2004,Theft,25708
+2005,Theft,27079
+2006,Theft,23726
+2007,Theft,22172
+1996,Vehicle Theft,6350
+1997,Vehicle Theft,7038
+1998,Vehicle Theft,8074
+1999,Vehicle Theft,8607
+2000,Vehicle Theft,8346
+2001,Vehicle Theft,8736
+2002,Vehicle Theft,8297
+2003,Vehicle Theft,9038
+2004,Vehicle Theft,9246
+2005,Vehicle Theft,9548
+2006,Vehicle Theft,8131
+2007,Vehicle Theft,5766
+1996,Violent Crimes Total,4472
+1997,Violent Crimes Total,4942
+1998,Violent Crimes Total,4415
+1999,Violent Crimes Total,4115
+2000,Violent Crimes Total,4281
+2001,Violent Crimes Total,4079
+2002,Violent Crimes Total,4030
+2003,Violent Crimes Total,3891
+2004,Violent Crimes Total,3763
+2005,Violent Crimes Total,4073

@@ -1,0 +1,50 @@
+report_year,crime_type,total_number
+2008,Assault,1669
+2009,Assault,1918
+2010,Assault,1936
+2011,Assault,2097
+2012,Assault,2179
+2013,Assault,1942
+2014,Assault,674
+2008,Burglary,6512
+2009,Burglary,6692
+2010,Burglary,6419
+2011,Burglary,6796
+2012,Burglary,6742
+2013,Burglary,7382
+2014,Burglary,2252
+2008,Homicide,30
+2009,Homicide,22
+2010,Homicide,19
+2011,Homicide,20
+2012,Homicide,24
+2013,Homicide,23
+2014,Homicide,7
+2008,Larceny-Theft,22383
+2009,Larceny-Theft,25003
+2010,Larceny-Theft,23132
+2011,Larceny-Theft,21441
+2012,Larceny-Theft,20280
+2013,Larceny-Theft,19727
+2014,Larceny-Theft,7298
+2008,Motor Vehicle Theft,3791
+2009,Motor Vehicle Theft,3281
+2010,Motor Vehicle Theft,3445
+2011,Motor Vehicle Theft,3398
+2012,Motor Vehicle Theft,3564
+2013,Motor Vehicle Theft,4217
+2014,Motor Vehicle Theft,1695
+2008,Rape,130
+2009,Rape,94
+2010,Rape,79
+2011,Rape,90
+2012,Rape,105
+2013,Rape,91
+2014,Rape,31
+2008,Robbery,1588
+2009,Robbery,1769
+2010,Robbery,1415
+2011,Robbery,1401
+2012,Robbery,1422
+2013,Robbery,1590
+2014,Robbery,471
