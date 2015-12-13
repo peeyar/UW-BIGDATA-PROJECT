@@ -1,0 +1,77 @@
+--sfo counts
+select sfoc.year, type as crime_type, sum(total_number) as crime_count, sum(unemployment) as unemployment_count, sum(population) as population
+from sfo_crime as sfoc
+join sfo_meta as sfom on sfoc.year = sfom.year
+where type='BURGLARY'
+group by sfoc.year, type
+;
+
+--create merged crime table
+create table crime (
+  year INT,
+  city STRING,
+  type STRING,
+  total_number BIGINT
+  );
+
+--add data to crime
+INSERT INTO crime select year,'San Francisco' as city, type, total_number FROM sfo_crime;
+INSERT INTO crime select year,'Seattle' as city, type, total_number FROM sea_crime1;
+INSERT INTO crime select year,'Seattle' as city, type, total_number FROM sea_crime2;
+INSERT INTO crime select year,'Chicago' as city, type, total_number FROM chi_crime;
+
+--test counts
+select count(*) from sfo_crime; --493
+select count(*) from sea_crime1; --116
+select count(*) from sea_crime2; --49
+select count(*) from chi_crime; --440
+select count(*) from crime; --1098
+
+--create aggregate table
+create table crime_agg (
+  year INT,
+  city STRING,
+  type STRING,
+  crime_count BIGINT,
+  unemployment_count BIGINT,
+  population BIGINT
+ );
+
+--get aggregates into table
+insert into crime_agg
+select c.year, c.city, c.type as crime_type
+, sum(c.total_number) as crime_count
+, sum(coalesce(sfom.unemployment,seam.unemployment,chim.unemployment)) as unemployment_count
+, sum(coalesce(sfom.population,seam.population,chim.population)) as population
+from crime as c
+left join sfo_meta as sfom on c.year = sfom.year and c.city = sfom.city
+left join sea_meta as seam on c.year = seam.year and c.city = seam.city
+left join chi_meta as chim on c.year = chim.year and c.city = chim.city
+group by c.year, c.city, c.type;
+
+
+drop table crime_agg;
+
+create table crime_agg (
+  year INT,
+  city STRING,
+  crime_type STRING,
+  crimegroup_type STRING,
+  crime_count BIGINT,
+  unemployment_count BIGINT,
+  population BIGINT
+ );
+
+--get aggregates into table
+insert into crime_agg
+select c.year, c.city, c.type as crime_type, ct.group_type as crimegroup_type
+, sum(c.total_number) as crime_count
+, sum(coalesce(sfom.unemployment,seam.unemployment,chim.unemployment)) as unemployment_count
+, sum(coalesce(sfom.population,seam.population,chim.population)) as population
+from crime as c
+left join sfo_meta as sfom on c.year = sfom.year and c.city = sfom.city
+left join sea_meta as seam on c.year = seam.year and c.city = seam.city
+left join chi_meta as chim on c.year = chim.year and c.city = chim.city
+left join crimeType ct on c.type = ct.type
+group by c.year, c.city, c.type, ct.group_type;
+
