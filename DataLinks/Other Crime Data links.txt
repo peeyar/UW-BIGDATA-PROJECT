@@ -1,0 +1,2 @@
+Seattle: http://catalog.data.gov/dataset/statisticsmajor-crimes-2014-by-precinct-and-beat
+Los Angeles: http://catalog.data.gov/dataset/lapd-crime-and-collision-raw-data-2014-db997
